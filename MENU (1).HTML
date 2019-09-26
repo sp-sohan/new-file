@@ -1,0 +1,74 @@
+ <!doctype html>
+<html>
+<head>
+<title> my inline </title>
+<style>
+*
+{
+margin:0px;
+padding:0px;
+}
+#menu ul
+{
+list-style:none;
+}
+#menu ul li
+{
+background-color:red;
+border:2px solid skyblue;
+width:120px;
+height:35px;
+text-align:center;
+line-height:35px;
+float:left;
+position:relative;
+}
+#menu ul li a
+{
+text-decoration:none;
+color:white;
+display:block;
+}
+#menu ul li a:hover
+{
+background-color:green;
+
+}
+#menu ul ul
+{
+position:absolute;
+display:none;
+}
+#menu ul li:hover > ul
+{
+display:block;
+
+}
+#menu ul li > ul li a:hover
+{
+background-color:yellow;
+color:green;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+<ul>
+  <li><a href="#"> Home</a></li>
+  <li><a href="#"> About</a></li>
+  <li><a href="#"> Contact</a></li>
+  <li><a href="#"> News</a>
+        <ul>
+          <li><a href="#">Catering</a></li>
+		  <li><a href="#">Tax</a></li>
+		  <li><a href="#">Insurence</a></li>
+		  <li><a href="#">Event management</a></li>
+		  <li><a href="#">It consultance</a></li>
+        </ul>
+  </li>
+  
+  <li><a href="#">Dunation</a></li>
+</ul>
+</div>
+</body>
+</html>
